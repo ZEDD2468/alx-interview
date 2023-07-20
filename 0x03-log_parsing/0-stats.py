@@ -2,7 +2,7 @@
 import sys
 
 def print_statistics(stats):
-    print("Total file size:", "File size:", stats["total_size"])
+    print("File size:", stats["total_size"])
     for status_code in sorted(stats["status_codes"]):
         if status_code in ["200", "301", "400", "401", "403", "404", "405", "500"]:
             print(f"{status_code}: {stats['status_codes'][status_code]}")
@@ -42,4 +42,3 @@ def compute_metrics():
 
 if __name__ == "__main__":
     compute_metrics()
-
