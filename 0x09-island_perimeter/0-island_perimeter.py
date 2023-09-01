@@ -42,7 +42,7 @@ def island_perimeter(grid):
     p = 0
     for i in range(row):
         for j in range(col):
-            assert (grid[i][j] == 0) or (grid[i][j] == 1),\
+            assert (grid[i][j] == 0) or (grid[i][j] == 1),
                                         "grid numbers must be 0 or 1"
             if grid[i][j] == 1:
                 if i-1 < 0:
